@@ -22,3 +22,13 @@ document.querySelectorAll('.video-close').forEach(function (btn) {
     btn.closest('.video').classList.remove('is-open');
   });
 });
+
+// Mobile toggle for the CA main menu.
+document.querySelectorAll('.ca-menu-btn').forEach(function (btn) {
+  var menu = document.getElementById(btn.getAttribute('aria-controls'));
+  btn.addEventListener('click', function () {
+    var open = btn.getAttribute('aria-expanded') !== 'true';
+    btn.setAttribute('aria-expanded', String(open));
+    menu.classList.toggle('is-open', open);
+  });
+});
