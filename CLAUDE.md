@@ -12,6 +12,7 @@ A static HTML mockup of the Group Training section of columbiaassociation.org. I
 - `move-to-live-more.html`, `tribelife.html`, `trx.html`, `tribefit.html` - program pages
 - `notes.html` - build notes and open decisions for Shari
 - `styles.css`, `site.js` - shared by every page
+- `_redirects` - Cloudflare Pages rule that keeps this file off the live site
 
 The four program pages share one structure. When a change applies to "the program pages", make it on all four and keep them consistent.
 
