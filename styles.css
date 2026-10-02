@@ -89,11 +89,6 @@ p { margin: 0 0 1em; }
 .ca-nav .ca-login a { font-weight: 500; }
 .ca-menu-btn { display: none; }
 
-/* Breadcrumb */
-.crumbs { background: var(--white); border-bottom: 1px solid var(--line); font-size: 0.875rem; color: var(--muted); }
-.crumbs ol { list-style: none; margin: 0; padding: 10px 0; display: flex; flex-wrap: wrap; }
-.crumbs li + li::before { content: "/"; margin: 0 8px; color: #9AA6B8; }
-.crumbs a { color: var(--muted); }
 
 @media (max-width: 1180px) {
   .ca-main .wrap { min-height: 76px; }
@@ -123,18 +118,6 @@ p { margin: 0 0 1em; }
   .ca-util-links { gap: 14px; }
   .ca-logo-1, .ca-logo-2 { font-size: 1.4rem; }
 }
-
-/* Section nav across the five pages */
-.gt-nav { background: var(--white); border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 10; }
-.gt-nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 4px; overflow-x: auto; scrollbar-width: none; }
-.gt-nav ul::-webkit-scrollbar { display: none; }
-.gt-nav a {
-  display: block; padding: 14px 14px 12px; white-space: nowrap; text-decoration: none;
-  color: var(--muted); font-weight: 600; font-size: 0.95rem;
-  border-bottom: 3px solid transparent;
-}
-.gt-nav a:hover { color: var(--navy); }
-.gt-nav a[aria-current="page"] { color: var(--navy); border-bottom-color: var(--green); }
 
 /* ---------- Buttons ---------- */
 .btn {
