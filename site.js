@@ -32,3 +32,24 @@ document.querySelectorAll('.ca-menu-btn').forEach(function (btn) {
     menu.classList.toggle('is-open', open);
   });
 });
+
+// Inside a session video: no autoplay for people who prefer reduced motion.
+// Removing autoplay and reloading leaves the poster frame showing.
+(function () {
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
+  function apply() {
+    document.querySelectorAll('.session-video').forEach(function (video) {
+      if (reduce.matches) {
+        video.autoplay = false;
+        video.removeAttribute('autoplay');
+        video.pause();
+        video.load();
+      } else if (!video.autoplay) {
+        video.autoplay = true;
+        video.play().catch(function () {});
+      }
+    });
+  }
+  apply();
+  if (reduce.addEventListener) reduce.addEventListener('change', apply);
+})();

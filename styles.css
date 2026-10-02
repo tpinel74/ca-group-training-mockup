@@ -214,6 +214,12 @@ p { margin: 0 0 1em; }
   aspect-ratio: 4 / 3;
 }
 .ph small { display: block; font-weight: 400; color: var(--muted); margin-top: 4px; }
+.ph-label { display: block; margin-bottom: 6px; color: var(--green); font-weight: 700; }
+
+/* Inside a session: a photo now, a silent looping video later. Both fill the same 4:3 box. */
+.session-media { width: 100%; aspect-ratio: 4 / 3; border-radius: 10px; }
+.session-video { display: block; object-fit: cover; background: #E3E9F1; }
+.ph.session-media:has(+ .session-video) { display: none; }
 .ph-square { aspect-ratio: 1 / 1; border-radius: 50%; padding: 10px; font-size: 0.75rem; }
 .hero .ph { background-color: #26467C; background-image: repeating-linear-gradient(45deg, rgba(255,255,255,0.05) 0 12px, transparent 12px 24px); border-color: rgba(255,255,255,0.35); color: var(--white); }
 .hero .ph small { color: #C9D4E6; }
