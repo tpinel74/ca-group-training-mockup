@@ -21,7 +21,14 @@ The four program pages share one structure. When a change applies to "the progra
 - **Home:** (1) sell group training as a concept, (2) send the visitor to the right program. It has no free-trial form on purpose. Visitors who can't choose go to the "Ask Jodi" form.
 - **Program pages:** sell that program and get the visitor to request a free first class with as little friction as possible. Each page reminds people they can explore other formats.
 - **Out of scope:** current group training clients (they book in the CA app or portal) and TribeKIDS (one subtle link from the home page only).
-- Triage order is gentlest to most intense: Move to Live More, TribeLIFE, TRX, TribeFIT. Keep the nav and the home page rows in this order.
+- Triage order is gentlest to most intense: Move to Live More, TribeLIFE, TRX, TribeFIT. Keep the home page rows and any list of programs in this order.
+
+## Decisions already made (don't undo)
+
+- Paid advertising lands on the home page.
+- The home page has one combined "Ask Jodi" section, headed "Still not sure? That's what Jodi's for.", with the id `ask`. Every "Ask Jodi" link points to `#ask`. Don't add a second Jodi panel.
+- The header is the existing CA site header only. There is deliberately no breadcrumb and no section nav bar, to match the rest of the CA site. Program pages link back through "Group training: compare all programs" above the program name and the "Doesn't sound like you? Compare all four programs." line under "Is this for you?", both to `index.html#paths`.
+- The "Inside a session" slot on each program page is a photo now and will become a silent looping video later. The `<video>` markup is already there, commented out. Switching means un-commenting it and adding the file paths; the CSS hides the photo and `site.js` stops autoplay for people who prefer reduced motion.
 
 ## Conventions
 
@@ -49,7 +56,7 @@ Do not invent facts, results or statistics. If a requested change needs a fact y
 ## Open decisions
 
 These are listed in `notes.html`. Don't resolve them silently in copy. If a change settles one, update `notes.html` too:
-the free offer (one class or more), the two-business-day response promise, member and non-member routing, who owns follow-up after the class, coverage when Jodi is out, pricing visibility, which clubs run each program, the Move to Live More next step, JumpStart, and where the current registration form goes.
+the free offer (one class or more), Move to Live More's four weeks against the two-month minimum, the two-business-day response promise, member and non-member routing, who owns follow-up after the class, coverage when Jodi is out, pricing visibility, which clubs run each program, the Move to Live More next step, JumpStart, and where the current registration form goes.
 
 ## Working agreement
 
