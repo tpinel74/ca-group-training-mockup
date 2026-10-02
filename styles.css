@@ -169,9 +169,11 @@ p { margin: 0 0 1em; }
 .reason p { color: var(--muted); margin: 0; }
 
 /* Group fitness vs group training */
-.compare-wrap { margin-top: 56px; overflow-x: auto; }
+.compare-wrap { margin-top: 56px; }
+.compare-wrap h3 { color: var(--navy); }
+.compare-intro { color: var(--muted); max-width: 38em; margin: 10px 0 20px; }
+.compare-scroll { overflow-x: auto; }
 .compare { width: 100%; border-collapse: collapse; min-width: 560px; font-size: 1rem; }
-.compare caption { text-align: left; font-weight: 700; font-stretch: 108%; color: var(--navy); font-size: 1.2rem; padding-bottom: 12px; }
 .compare th, .compare td { text-align: left; padding: 14px 16px; border-bottom: 1px solid var(--line); vertical-align: top; }
 .compare thead th { font-size: 0.95rem; color: var(--muted); font-weight: 600; }
 .compare thead th:last-child { color: var(--green); }
