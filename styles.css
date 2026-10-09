@@ -183,7 +183,7 @@ p { margin: 0 0 1em; }
 /* ---------- Pathways (the triage) ---------- */
 .paths { list-style: none; margin: 0; padding: 0; border-top: 2px solid var(--navy); }
 .path a {
-  display: grid; grid-template-columns: 1.5fr 1fr 150px; gap: 32px; align-items: center;
+  display: grid; grid-template-columns: 160px 1.5fr 1fr 150px; gap: 32px; align-items: center;
   padding: 30px 24px 30px 20px; text-decoration: none; color: var(--ink);
   border-bottom: 1px solid var(--line); border-left: 4px solid transparent; background: var(--white);
 }
@@ -192,6 +192,7 @@ p { margin: 0 0 1em; }
 .path-prog { display: block; margin-top: 10px; font-size: 1rem; font-weight: 700; color: var(--green); font-stretch: 100%; }
 .path a:hover .path-prog { text-decoration: underline; }
 .path-facts { color: var(--muted); font-size: 0.98rem; }
+.ph-thumb { width: 100%; padding: 10px; font-size: 0.78rem; border-radius: 8px; }
 .path-facts strong { color: var(--ink); font-weight: 600; display: block; margin-bottom: 2px; }
 
 .meter { display: grid; gap: 8px; }
@@ -313,6 +314,7 @@ details.costs summary { cursor: pointer; font-weight: 700; color: var(--navy); }
 @media (max-width: 900px) {
   .hero .wrap, .ask, .split, .book { grid-template-columns: 1fr; gap: 36px; }
   .path a { grid-template-columns: 1fr; gap: 14px; padding: 24px 16px; }
+  .ph-thumb { max-width: 200px; }
   .meter { max-width: 200px; }
   .others { grid-template-columns: 1fr; }
 }
