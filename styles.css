@@ -176,9 +176,9 @@ p { margin: 0 0 1em; }
 .compare { width: 100%; border-collapse: collapse; min-width: 560px; font-size: 1rem; }
 .compare th, .compare td { text-align: left; padding: 14px 16px; border-bottom: 1px solid var(--line); vertical-align: top; }
 .compare thead th { font-size: 0.95rem; color: var(--muted); font-weight: 600; }
-.compare thead th:last-child { color: var(--green); }
+.compare thead th.col-gt { color: var(--green); }
 .compare tbody th { font-weight: 600; color: var(--ink); width: 22%; }
-.compare td:last-child { background: var(--green-tint); font-weight: 600; }
+.compare td.col-gt { background: var(--green-tint); font-weight: 600; }
 
 /* ---------- Pathways (the triage) ---------- */
 .paths { list-style: none; margin: 0; padding: 0; border-top: 2px solid var(--navy); }
